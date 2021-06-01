@@ -1,0 +1,6 @@
+@import url('./style/layout.css');
+@import url('./style/card.css');
+
+.App {
+  text-align: center;
+}

@@ -1,0 +1,97 @@
+body {
+    background-color: #E2E2E2;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #363537;
+}
+
+body.dark-theme {
+    background-color: #363537;
+    color: #FAFAFA;
+}
+
+.main-header {
+    background-color: #1EAEDB;
+    padding: 20px;
+}
+
+.dark-theme .main-header {
+    background-color: #01455a;
+}
+
+.mainframe {
+    position: relative;
+    background-color: #fff;
+    max-width: 920px;
+    margin: 30px auto 50px;
+    padding: 30px;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #d8d8d8;
+    min-height: 445px;
+}
+
+.mainframe > button {
+    position: absolute;
+    width: 200px;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.mainframe.no-card-loaded > button {
+    bottom: 230px;
+}
+
+.app-loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-loader-spinner {
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.dark-theme .mainframe {
+    background-color: #656565;
+    border-color: #6d6d6d;
+    box-shadow: 0 0 20px #505050;
+}
+
+.dark-theme .app-loader {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme .app-loader-spinner {
+    background-color: #6d6d6d;  
+    color: #FAFAFA;  
+}
+
+button,
+.mainframe,
+.app-loader,
+.app-loader-spinner {
+    transition: all 300ms ease-out;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+}
